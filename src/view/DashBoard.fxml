@@ -15,9 +15,9 @@
             <Font name="System Bold" size="32.0" />
          </font>
       </Label>
-      <JFXTextField layoutX="94.0" layoutY="123.0" prefHeight="31.0" prefWidth="320.0" promptText="Enter Customer Name" />
-      <JFXTextField layoutX="94.0" layoutY="185.0" prefHeight="31.0" prefWidth="320.0" promptText="Enter Customer Address" />
-      <JFXTextField layoutX="94.0" layoutY="245.0" prefHeight="31.0" prefWidth="320.0" promptText="Enter Customer Contact" />
+      <JFXTextField fx:id="txt_Customer_Name" layoutX="94.0" layoutY="123.0" prefHeight="31.0" prefWidth="320.0" promptText="Enter Customer Name" />
+      <JFXTextField fx:id="txt_Customer_Address" layoutX="94.0" layoutY="185.0" prefHeight="31.0" prefWidth="320.0" promptText="Enter Customer Address" />
+      <JFXTextField fx:id="txt_Customer_Contact" layoutX="94.0" layoutY="245.0" prefHeight="31.0" prefWidth="320.0" promptText="Enter Customer Contact" />
       <JFXButton fx:id="btn_Add_New_Customer" layoutX="664.0" layoutY="37.0" onAction="#btn_ADDnew_Customer" prefHeight="31.0" prefWidth="92.0" style="-fx-background-color: #00b33c;" text="ADD" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
@@ -38,7 +38,7 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </JFXButton>
-      <TableView layoutX="58.0" layoutY="357.0" prefHeight="200.0" prefWidth="686.0">
+      <TableView fx:id="tbl_Customer_details" layoutX="58.0" layoutY="357.0" prefHeight="200.0" prefWidth="686.0">
         <columns>
           <TableColumn prefWidth="120.0" text="Customer ID" />
           <TableColumn prefWidth="186.0" text="Customer Name" />
