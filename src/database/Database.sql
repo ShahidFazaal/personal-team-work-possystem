@@ -14,13 +14,13 @@ DROP TABLE IF EXISTS `items`;
 CREATE TABLE `items` (
     itemId INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     description varchar(100) NOT NULL,
-    qty int(11) NOT NULL,
+    qty int NOT NULL,
     unitPrice double NOT NULL
 );
 
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
-    userId int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    userName varchar(100) NOT NULL,
-    password int(11) NOT NULL
+    userId int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    userName varchar(20) NOT NULL,
+    password varchar(15) NOT NULL
 );

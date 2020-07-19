@@ -15,6 +15,8 @@ public class AppInitializer extends Application {
         launch(args);
         if (!(DBConnectionWorking.getInstance().getConnection() == null)){
             DBConnectionWorking.getInstance().getConnection().close();
+            System.out.println("Disconnecting the Database Connection please wait!");
+            System.out.println("Done");
         }
     }
     @Override
